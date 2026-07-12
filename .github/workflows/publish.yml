@@ -1,0 +1,52 @@
+name: Publicar carrossel no Instagram
+
+on:
+  schedule:
+    # 14:00 UTC = 11:00 America/Sao_Paulo (UTC-3, sem horario de verao).
+    # Segundas (1) e quintas (4).
+    - cron: "0 14 * * 1,4"
+  workflow_dispatch:
+    inputs:
+      force_post:
+        description: "Publicar um post especifico agora (ex.: post-05). Deixe vazio para usar a data de hoje."
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-instagram
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Publicar
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          API_VERSION: v19.0
+          FORCE_POST: ${{ github.event.inputs.force_post }}
+        run: python publish.py
+
+      - name: Commit state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add state/published.json || true
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: registra publicacao [skip ci]"
+            git push
+          else
+            echo "Sem mudancas no state."
+          fi

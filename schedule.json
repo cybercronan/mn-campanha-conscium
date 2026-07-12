@@ -1,0 +1,423 @@
+{
+  "timezone": "America/Sao_Paulo",
+  "post_time_local": "11:00",
+  "account": "mestranatureza",
+  "ig_user_id": "17841403158526487",
+  "raw_base": "https://raw.githubusercontent.com/cybercronan/mn-campanha-conscium/main/posts",
+  "schedule": [
+    {
+      "date": "2026-07-13",
+      "post": "post-01",
+      "cards": [
+        "card-1.png",
+        "card-2.png",
+        "card-3.png",
+        "card-4.png"
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "post": "post-02",
+      "cards": [
+        "card-1.png",
+        "card-2.png",
+        "card-3.png",
+        "card-4.png",
+        "card-5.png"
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "post": "post-03",
+      "cards": [
+        "card-1.png",
+        "card-2.png",
+        "card-3.png",
+        "card-4.png",
+        "card-5.png"
+      ]
+    },
+    {
+      "date": "2026-07-23",
+      "post": "post-04",
+      "cards": [
+        "card-1.png",
+        "card-2.png",
+        "card-3.png",
+        "card-4.png",
+        "card-5.png"
+      ]
+    },
+    {
+      "date": "2026-07-27",
+      "post": "post-05",
+      "cards": [
+        "card-1.png",
+        "card-2.png",
+        "card-3.png"
+      ]
+    },
+    {
+      "date": "2026-07-30",
+      "post": "post-06",
+      "cards": [
+        "card-1.png",
+        "card-2.png",
+        "card-3.png",
+        "card-4.png",
+        "card-5.png"
+      ]
+    },
+    {
+      "date": "2026-08-03",
+      "post": "post-07",
+      "cards": [
+        "card-1.png",
+        "card-2.png",
+        "card-3.png",
+        "card-4.png",
+        "card-5.png",
+        "card-6.png",
+        "card-7.png"
+      ]
+    },
+    {
+      "date": "2026-08-06",
+      "post": "post-08",
+      "cards": [
+        "card-1.png",
+        "card-2.png",
+        "card-3.png",
+        "card-4.png",
+        "card-5.png"
+      ]
+    },
+    {
+      "date": "2026-08-10",
+      "post": "post-09",
+      "cards": [
+        "card-1.png",
+        "card-2.png",
+        "card-3.png",
+        "card-4.png",
+        "card-5.png"
+      ]
+    },
+    {
+      "date": "2026-08-13",
+      "post": "post-10",
+      "cards": [
+        "card-1.png",
+        "card-2.png",
+        "card-3.png"
+      ]
+    },
+    {
+      "date": "2026-08-17",
+      "post": "post-11",
+      "cards": [
+        "card-1.png",
+        "card-2.png",
+        "card-3.png",
+        "card-4.png",
+        "card-5.png"
+      ]
+    },
+    {
+      "date": "2026-08-20",
+      "post": "post-12",
+      "cards": [
+        "card-1.png",
+        "card-2.png",
+        "card-3.png",
+        "card-4.png",
+        "card-5.png"
+      ]
+    },
+    {
+      "date": "2026-08-24",
+      "post": "post-13",
+      "cards": [
+        "card-1.png",
+        "card-2.png",
+        "card-3.png"
+      ]
+    },
+    {
+      "date": "2026-08-27",
+      "post": "post-14",
+      "cards": [
+        "card-1.png",
+        "card-2.png",
+        "card-3.png",
+        "card-4.png",
+        "card-5.png"
+      ]
+    },
+    {
+      "date": "2026-08-31",
+      "post": "post-15",
+      "cards": [
+        "card-1.png",
+        "card-2.png",
+        "card-3.png",
+        "card-4.png",
+        "card-5.png"
+      ]
+    },
+    {
+      "date": "2026-09-03",
+      "post": "post-16",
+      "cards": [
+        "card-1.png",
+        "card-2.png",
+        "card-3.png"
+      ]
+    },
+    {
+      "date": "2026-09-07",
+      "post": "post-17",
+      "cards": [
+        "card-1.png",
+        "card-2.png",
+        "card-3.png",
+        "card-4.png",
+        "card-5.png"
+      ]
+    },
+    {
+      "date": "2026-09-10",
+      "post": "post-18",
+      "cards": [
+        "card-1.png",
+        "card-2.png",
+        "card-3.png"
+      ]
+    },
+    {
+      "date": "2026-09-14",
+      "post": "post-19",
+      "cards": [
+        "card-1.png",
+        "card-2.png",
+        "card-3.png",
+        "card-4.png",
+        "card-5.png"
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "post": "post-20",
+      "cards": [
+        "card-1.png",
+        "card-2.png",
+        "card-3.png",
+        "card-4.png",
+        "card-5.png"
+      ]
+    },
+    {
+      "date": "2026-09-21",
+      "post": "post-21",
+      "cards": [
+        "card-1.png",
+        "card-2.png",
+        "card-3.png",
+        "card-4.png",
+        "card-5.png"
+      ]
+    },
+    {
+      "date": "2026-09-24",
+      "post": "post-22",
+      "cards": [
+        "card-1.png",
+        "card-2.png",
+        "card-3.png",
+        "card-4.png",
+        "card-5.png"
+      ]
+    },
+    {
+      "date": "2026-09-28",
+      "post": "post-23",
+      "cards": [
+        "card-1.png",
+        "card-2.png",
+        "card-3.png",
+        "card-4.png",
+        "card-5.png"
+      ]
+    },
+    {
+      "date": "2026-10-01",
+      "post": "post-24",
+      "cards": [
+        "card-1.png",
+        "card-2.png",
+        "card-3.png"
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "post": "post-25",
+      "cards": [
+        "card-1.png",
+        "card-2.png",
+        "card-3.png",
+        "card-4.png",
+        "card-5.png"
+      ]
+    },
+    {
+      "date": "2026-10-08",
+      "post": "post-26",
+      "cards": [
+        "card-1.png",
+        "card-2.png",
+        "card-3.png"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "post": "post-27",
+      "cards": [
+        "card-1.png",
+        "card-2.png",
+        "card-3.png"
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "post": "post-28",
+      "cards": [
+        "card-1.png",
+        "card-2.png",
+        "card-3.png"
+      ]
+    },
+    {
+      "date": "2026-10-19",
+      "post": "post-29",
+      "cards": [
+        "card-1.png",
+        "card-2.png",
+        "card-3.png",
+        "card-4.png",
+        "card-5.png"
+      ]
+    },
+    {
+      "date": "2026-10-22",
+      "post": "post-30",
+      "cards": [
+        "card-1.png",
+        "card-2.png",
+        "card-3.png"
+      ]
+    },
+    {
+      "date": "2026-10-26",
+      "post": "post-31",
+      "cards": [
+        "card-1.png",
+        "card-2.png",
+        "card-3.png"
+      ]
+    },
+    {
+      "date": "2026-10-29",
+      "post": "post-32",
+      "cards": [
+        "card-1.png",
+        "card-2.png",
+        "card-3.png",
+        "card-4.png"
+      ]
+    },
+    {
+      "date": "2026-11-02",
+      "post": "post-33",
+      "cards": [
+        "card-1.png",
+        "card-2.png",
+        "card-3.png",
+        "card-4.png",
+        "card-5.png"
+      ]
+    },
+    {
+      "date": "2026-11-05",
+      "post": "post-34",
+      "cards": [
+        "card-1.png",
+        "card-2.png",
+        "card-3.png"
+      ]
+    },
+    {
+      "date": "2026-11-09",
+      "post": "post-35",
+      "cards": [
+        "card-1.png",
+        "card-2.png",
+        "card-3.png"
+      ]
+    },
+    {
+      "date": "2026-11-12",
+      "post": "post-36",
+      "cards": [
+        "card-1.png",
+        "card-2.png",
+        "card-3.png",
+        "card-4.png",
+        "card-5.png"
+      ]
+    },
+    {
+      "date": "2026-11-16",
+      "post": "post-37",
+      "cards": [
+        "card-1.png",
+        "card-2.png",
+        "card-3.png",
+        "card-4.png",
+        "card-5.png"
+      ]
+    },
+    {
+      "date": "2026-11-19",
+      "post": "post-38",
+      "cards": [
+        "card-1.png",
+        "card-2.png",
+        "card-3.png",
+        "card-4.png",
+        "card-5.png"
+      ]
+    },
+    {
+      "date": "2026-11-23",
+      "post": "post-39",
+      "cards": [
+        "card-1.png",
+        "card-2.png",
+        "card-3.png",
+        "card-4.png",
+        "card-5.png"
+      ]
+    },
+    {
+      "date": "2026-11-26",
+      "post": "post-40",
+      "cards": [
+        "card-1.png",
+        "card-2.png",
+        "card-3.png",
+        "card-4.png",
+        "card-5.png"
+      ]
+    }
+  ]
+}
