@@ -36,21 +36,6 @@ Período planejado: 13/07/2026 a 26/11/2026, sempre às 11h no horário de Bras�
 
 As imagens são servidas por `raw.githubusercontent.com` para que os servidores da Meta consigam acessá-las durante a criação do carrossel. Por isso, este repositório é público.
 
-## Configuração
-
-O workflow espera dois segredos no GitHub:
-
-* `IG_ACCESS_TOKEN`: token com permissão `instagram_content_publish`
-* `IG_USER_ID`: identificador da conta Instagram Business
-
-A versão da Graph API pode ser ajustada pela variável `API_VERSION`.
-
-## Teste manual
-
-Em **Actions**, abra **Publicar carrossel no Instagram** e escolha **Run workflow**.
-
-Deixe `force_post` vazio para usar o post agendado para o dia ou informe uma pasta, como `post-05`, para testar uma publicação específica. Para validar sem publicar, defina `DRY_RUN` no ambiente de execução.
-
 ## Status
 
 Automação em implantação para a campanha prevista entre julho e novembro de 2026.
