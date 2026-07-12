@@ -104,14 +104,26 @@ def publish_post(entry, cfg, token, ig_id):
     raw_base = cfg["raw_base"]
     children = []
     for card in entry["cards"]:
-        image_url = f"{raw_base}/{entry['post']}/{card}"
-        log(f"criando item: {image_url}")
-        res = api_post(ig_id + "/media", {
-            "image_url": image_url,
-            "is_carousel_item": "true",
-            "access_token": token,
-        })
-        cid = res["id"]
+        base_url = f"{raw_base}/{entry['post']}/{card}"
+        # A Meta cacheia por URL o resultado do download (inclusive falhas). Cada
+        # tentativa usa um cache-buster novo (?v=...) para nunca cair num cache
+        # negativo de uma tentativa anterior.
+        cid = None
+        for attempt in range(1, 6):
+            image_url = f"{base_url}?v={int(time.time())}-{attempt}"
+            log(f"criando item {card} (tentativa {attempt}): {image_url}")
+            try:
+                res = api_post(ig_id + "/media", {
+                    "image_url": image_url,
+                    "is_carousel_item": "true",
+                    "access_token": token,
+                })
+                cid = res["id"]
+                break
+            except urllib.error.HTTPError:
+                if attempt == 5:
+                    raise
+                time.sleep(8)
         wait_finished(cid, token, f"item {card}")
         children.append(cid)
 
@@ -124,6 +136,10 @@ def publish_post(entry, cfg, token, ig_id):
     })
     carousel_id = carousel["id"]
     wait_finished(carousel_id, token, "carrossel")
+
+    if os.environ.get("DRY_RUN", "").strip():
+        log(f"DRY_RUN: carrossel {carousel_id} montado e FINISHED. NAO publicado.")
+        return f"DRY_RUN:{carousel_id}"
 
     log("publicando...")
     pub = api_post(ig_id + "/media_publish", {
@@ -167,6 +183,10 @@ def main():
 
     log(f"Publicando {entry['post']} (agendado {entry['date']}) com {len(entry['cards'])} cards")
     media_id = publish_post(entry, cfg, token, ig_id)
+
+    if os.environ.get("DRY_RUN", "").strip():
+        log("DRY_RUN: state NAO alterado.")
+        return
 
     state[entry["post"]] = {
         "published": True,
