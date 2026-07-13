@@ -3,8 +3,15 @@ name: Publicar carrossel no Instagram
 on:
   schedule:
     # 14:00 UTC = 11:00 America/Sao_Paulo (UTC-3, sem horario de verao).
-    # Segundas (1) e quintas (4).
+    # Segundas (1) e quintas (4). Disparo principal.
     - cron: "0 14 * * 1,4"
+    # Rede de seguranca: o GitHub as vezes perde o primeiro disparo de um
+    # cron recem-criado (aconteceu no lancamento da campanha em 13/07/2026).
+    # Estes reforcos rodam depois e nao duplicam nada: publish.py checa
+    # state/published.json e nao republica o que ja saiu.
+    - cron: "0 15 * * 1,4"
+    - cron: "0 17 * * 1,4"
+    - cron: "0 20 * * 1,4"
   workflow_dispatch:
     inputs:
       force_post:

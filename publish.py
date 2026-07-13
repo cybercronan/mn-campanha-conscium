@@ -50,8 +50,11 @@ def save_state(state):
 
 
 def api_post(path, params):
-    data = urllib.parse.urlencode(params).encode()
+    data = urllib.parse.urlencode(params).encode("utf-8")
     req = urllib.request.Request(f"{GRAPH}/{path}", data=data, method="POST")
+    # Sem charset explicito, a Graph API as vezes interpreta o corpo como
+    # Latin-1 e regrava acentos com mojibake (ex.: "e" -> "A?").
+    req.add_header("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8")
     return _send(req)
 
 
